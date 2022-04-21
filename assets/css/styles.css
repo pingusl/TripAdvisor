@@ -108,6 +108,7 @@ main > nav > div {
 main > nav > div:nth-last-child() {
   margin-right: 0px;
 }
+
 /*Mets en veille les boutons Vols et Croisières*/
 .main-nav-1 > div:nth-child(6) {
   display: none;
@@ -301,27 +302,45 @@ main > div:nth-child(2) {
   }
   /*Empêche la mise à la ligne des premiers boutons du menu */
   .main-nav-1 div:nth-child(1) {
+    /*Hôtel*/
     flex-wrap: nowrap;
+    margin-right: 10px;
   }
   .main-nav-1 div:nth-child(2) {
+    /*Vancances*/
     flex-wrap: nowrap;
+    margin-right: 10px;
   }
   .main-nav-1 div:nth-child(3) {
+    /*Activités*/
     flex-wrap: nowrap;
+    margin-right: 10px;
   }
   .main-nav-1 div:nth-child(4) {
+    /*Restaurants*/
     flex-wrap: nowrap;
+    margin-right: 0px;
   }
   .main-nav-1 div:nth-child(5) {
+    /*Voyages*/
     flex-wrap: nowrap;
-    width: 400px;
+    margin-right: 10px;
   }
   /*permet d'activer les boutons Vols et Croisières*/
   .main-nav-1 > div:nth-child(6) {
+    /*Vols*/
     display: flex;
+    margin-right: 10px;
   }
   .main-nav-1 > div:nth-child(7) {
+    /*Croisières*/
     display: flex;
+    margin-right: 10px;
+  }
+  .main-nav-1 > div:nth-child(8) {
+    /*Plus ...*/
+    display: flex;
+    margin-right: 0px;
   }
   /*dimensionnement des boutons en superposition du menu*/
   .main-menu {
@@ -329,6 +348,6 @@ main > div:nth-child(2) {
     background-color: aquamarine;
     /* flex-shrink: 0; */
     margin-top: 10px;
-    width: 400px;
+    flex: 22%;
   }
 }
