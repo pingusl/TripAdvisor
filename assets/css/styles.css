@@ -292,23 +292,34 @@ main > div:nth-child(2) {
   right: 20px;
   z-index: 5000;
 }
-
-@media (min-width: 768px) and (max-width: 1183px) {
+/********GESTION REDIMENSIONNEMENT DE PAGE************/
+@media (min-width: 576px) and (max-width: 1183px) {
+  /*Permet de mettre à la ligne le menu principal
+   lors du redimentionnement de la page*/
   .main-nav-1 {
     flex-wrap: wrap;
   }
+  /*Empêche la mise à la mise à la ligne des premiers boutons du menu */
+  .main-nav-1 div:nth-child(1) {
+    flex-wrap: nowrap;
+  }
+  .main-nav-1 div:nth-child(2) {
+    flex-wrap: nowrap;
+  }
+  .main-nav-1 div:nth-child(3) {
+    flex-wrap: nowrap;
+  }
+  .main-nav-1 div:nth-child(4) {
+    flex-wrap: nowrap;
+  }
+  /*permet d'afficher les boutons supplémentaires du menu*/
   .main-nav-1 > div:nth-child(6) {
     display: flex;
   }
   .main-nav-1 > div:nth-child(7) {
     display: flex;
   }
-  .main-menu-1 > span {
-    flex-wrap: nowrap;
-    border-style: solid;
-    border-width: 1px;
-    border-color: black;
-  }
+
   .main-menu-2 {
     display: flex;
     background-color: aquamarine;
