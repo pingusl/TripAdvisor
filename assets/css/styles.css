@@ -108,7 +108,7 @@ main > nav > div {
 main > nav > div:nth-last-child() {
   margin-right: 0px;
 }
-
+/*Mets en veille les boutons Vols et Croisières*/
 .main-nav-1 > div:nth-child(6) {
   display: none;
 }
@@ -293,13 +293,13 @@ main > div:nth-child(2) {
   z-index: 5000;
 }
 /********GESTION REDIMENSIONNEMENT DE PAGE************/
-@media (min-width: 576px) and (max-width: 1183px) {
+@media (min-width: 576px) and (max-width: 1200px) {
   /*Permet de mettre à la ligne le menu principal
    lors du redimentionnement de la page*/
   .main-nav-1 {
     flex-wrap: wrap;
   }
-  /*Empêche la mise à la mise à la ligne des premiers boutons du menu */
+  /*Empêche la mise à la ligne des premiers boutons du menu */
   .main-nav-1 div:nth-child(1) {
     flex-wrap: nowrap;
   }
@@ -312,18 +312,23 @@ main > div:nth-child(2) {
   .main-nav-1 div:nth-child(4) {
     flex-wrap: nowrap;
   }
-  /*permet d'afficher les boutons supplémentaires du menu*/
+  .main-nav-1 div:nth-child(5) {
+    flex-wrap: nowrap;
+    width: 400px;
+  }
+  /*permet d'activer les boutons Vols et Croisières*/
   .main-nav-1 > div:nth-child(6) {
     display: flex;
   }
   .main-nav-1 > div:nth-child(7) {
     display: flex;
   }
-
-  .main-menu-2 {
+  /*dimensionnement des boutons en superposition du menu*/
+  .main-menu {
     display: flex;
     background-color: aquamarine;
     /* flex-shrink: 0; */
     margin-top: 10px;
+    width: 400px;
   }
 }
